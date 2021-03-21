@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:movies_mobile_app/models/network/show.dart';
-
-import 'package:movies_mobile_app/models/network/shows_response.dart';
+import 'package:movies_mobile_app/models/entities/schedule.dart';
+import 'package:movies_mobile_app/models/entities/show.dart';
 
 class ApiService {
   static String mazeBaseUrl = 'https://api.tvmaze.com';
@@ -23,17 +22,16 @@ class ApiService {
 class APIClient {
   final Dio dio = Dio();
 
-  Future<ShowsResponse> fetchNowPlaying({int page = 1, String? date}) async {
+  Future<List<Schedule>> fetchNowPlaying({int page = 1, String? date}) async {
     final response = await dio.get(ApiService.showsNowPlaying('2021-03-20'));
-    return ShowsResponse.fromJson(
-      <String, dynamic>{'showsList': response.data},
-    );
+    return Schedule.listFromJson(response.data);
   }
 
   Future<List<Show>> fetchShows({int page = 1}) async {
-    final response = await dio.get(ApiService.all(1));
-    final items = (response.data as List<dynamic>).map((e) => Show.fromJson(e));
+    final Response<dynamic> response = await dio.get(ApiService.all(1));
+    // final rowDataList = response.data as List<dynamic>;
+    // return rowDataList.map((e) => Show.fromJson(e)).toList();
 
-    return items.toList();
+    return Show.listFromJson(response.data);
   }
 }

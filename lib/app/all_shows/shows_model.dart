@@ -1,6 +1,6 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:movies_mobile_app/api/api_client.dart';
-import 'package:movies_mobile_app/models/network/show.dart';
+import 'package:movies_mobile_app/models/entities/show.dart';
 import 'package:movies_mobile_app/models/state/shows_state.dart';
 
 class ShowsModel extends StateNotifier<ShowsState> {
@@ -30,7 +30,6 @@ class ShowsModel extends StateNotifier<ShowsState> {
       if (myShows.isEmpty) {
         state = ShowsState.data(_shows, false);
       } else {
-        // print(result.scheduleList.first.embed?.show.name);
         state = ShowsState.data(_shows..addAll(myShows), false);
       }
     } catch (e) {

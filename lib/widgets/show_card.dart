@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import 'package:movies_mobile_app/models/network/show.dart';
+import 'package:movies_mobile_app/models/entities/show.dart';
 
 class ShowCard extends StatelessWidget {
   const ShowCard(this.show);

@@ -17,6 +17,13 @@ class Show with _$Show {
   }) = _Show;
 
   factory Show.fromJson(Map<String, dynamic> json) => _$ShowFromJson(json);
+
+  static List<Show> listFromJson(dynamic data) {
+    final rowDataList = data as List<dynamic>;
+    return rowDataList
+        .map((elem) => Show.fromJson(elem as Map<String, dynamic>))
+        .toList();
+  }
 }
 
 @freezed

@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'package:movies_mobile_app/models/network/show.dart';
+import 'package:movies_mobile_app/models/entities/show.dart';
 import 'package:movies_mobile_app/widgets/show_card.dart';
 
 class ShowList extends StatelessWidget {

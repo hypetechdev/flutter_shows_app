@@ -1,6 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:movies_mobile_app/models/network/schedule_response.dart';
-import 'package:movies_mobile_app/models/network/show.dart';
+import 'package:movies_mobile_app/models/entities/show.dart';
 
 part 'shows_state.freezed.dart';
 
