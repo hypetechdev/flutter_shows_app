@@ -27,8 +27,10 @@ class ShowsGrid extends StatelessWidget {
       itemCount: shows.length,
       itemBuilder: (context, index) {
         final show = shows[index];
+        const image = 'https://via.placeholder.com/150x300?text=No Image';
+
         return CardTile(
-          imagePath: show.image?.original ?? '',
+          imagePath: show.image?.medium ?? image,
           //debugIndex: index,
           favouriteBuilder: favouriteBuilder != null
               ? (context) => favouriteBuilder!.call(context, show)

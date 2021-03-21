@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+
 import 'package:movies_mobile_app/models/entities/schedule.dart';
 import 'package:movies_mobile_app/models/entities/show.dart';
 
@@ -14,7 +15,6 @@ class ApiService {
   }
 }
 
-// TODO: Convert to use DIO
 class APIClient {
   final Dio dio = Dio();
 
@@ -23,6 +23,8 @@ class APIClient {
     final schedule = Schedule.listFromJson(response.data);
     return schedule
         .where((element) => element.embedded?.show is Show)
+        //TODO: Try to find alternative for this cast
+        // ignore: cast_nullable_to_non_nullable
         .map((e) => e.embedded?.show as Show)
         .toList();
   }
