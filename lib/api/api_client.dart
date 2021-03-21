@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 
-import 'package:movies_mobile_app/models/entities/schedule.dart';
-import 'package:movies_mobile_app/models/entities/show.dart';
+import 'package:hyt_app/models/entities/schedule.dart';
+import 'package:hyt_app/models/entities/show.dart';
 
 class ApiService {
   static const String _mazeBaseUrl = 'https://api.tvmaze.com';

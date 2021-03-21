@@ -1,4 +1,4 @@
-import 'package:movies_mobile_app/models/entities/show.dart';
+import 'package:hyt_app/models/entities/show.dart';
 
 class ScheduleData {
   ScheduleData({

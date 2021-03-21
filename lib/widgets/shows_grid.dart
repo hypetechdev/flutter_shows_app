@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movies_mobile_app/models/entities/show.dart';
-import 'package:movies_mobile_app/widgets/card_tile.dart';
+import 'package:hyt_app/models/entities/show.dart';
+import 'package:hyt_app/widgets/card_tile.dart';
 
 // TODO: Add favourite button builder
 class ShowsGrid extends StatelessWidget {

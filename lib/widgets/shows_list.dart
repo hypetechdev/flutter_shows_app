@@ -1,9 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'package:movies_mobile_app/models/entities/show.dart';
-import 'package:movies_mobile_app/widgets/show_card.dart';
+import 'package:hyt_app/models/entities/show.dart';
+import 'package:hyt_app/widgets/show_card.dart';
 
+@Deprecated('Wiget is only for demonstration purpose')
 class ShowList extends StatelessWidget {
   const ShowList(this.shows);
 
@@ -11,12 +12,17 @@ class ShowList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return shows.isEmpty ? _buildNoItems() : _buildShowsList();
+  }
+
+  Widget _buildNoItems() {
+    return const Center(child: Text('No items'));
+  }
+
+  Widget _buildShowsList() {
     return ListView.builder(
-      itemCount: shows.length,
-      itemBuilder: (context, index) {
-        return ShowCard(shows[index]);
-      },
-    );
+        itemCount: shows.length,
+        itemBuilder: (_, index) => ShowCard(shows[index]));
   }
 
   @override

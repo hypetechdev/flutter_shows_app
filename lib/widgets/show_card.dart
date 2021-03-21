@@ -3,8 +3,9 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import 'package:movies_mobile_app/models/entities/show.dart';
+import 'package:hyt_app/models/entities/show.dart';
 
+@Deprecated('Wiget is only for demonstration purpose')
 class ShowCard extends StatelessWidget {
   const ShowCard(this.show);
 

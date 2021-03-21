@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:movies_mobile_app/app/main/main_navigation.dart';
-import 'package:movies_mobile_app/app/shows/now_playing_screen.dart';
-import 'package:movies_mobile_app/app/shows/shows_screen.dart';
+import 'package:hyt_app/app/main/main_navigation.dart';
+import 'package:hyt_app/app/shows/now_playing_screen.dart';
+import 'package:hyt_app/app/shows/shows_screen.dart';
 
 class AppRoot extends StatelessWidget {
   @override

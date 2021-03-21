@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:movies_mobile_app/models/entities/show.dart';
+import 'package:hyt_app/models/entities/show.dart';
 
 part 'shows_state.freezed.dart';
 

@@ -1,7 +1,7 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:movies_mobile_app/api/api_client.dart';
-import 'package:movies_mobile_app/models/entities/show.dart';
-import 'package:movies_mobile_app/models/state/shows_state.dart';
+import 'package:hyt_app/api/api_client.dart';
+import 'package:hyt_app/models/entities/show.dart';
+import 'package:hyt_app/models/state/shows_state.dart';
 
 enum ScreenType { nowPlaying, allShows }
 
