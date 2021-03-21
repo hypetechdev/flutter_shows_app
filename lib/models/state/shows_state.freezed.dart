@@ -1,7 +1,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
-part of 'now_playing_state.dart';
+part of 'shows_state.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -13,19 +13,19 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-class _$NowPlayingStateTearOff {
-  const _$NowPlayingStateTearOff();
+class _$ShowsStateTearOff {
+  const _$ShowsStateTearOff();
 
-  _Data data(List<ShowResponse> shows, bool hasMore) {
+  _Data data(List<Show> shows, bool hasMore) {
     return _Data(
       shows,
       hasMore,
     );
   }
 
-  _DataLoading dataLoading(List<ShowResponse> movies) {
+  _DataLoading dataLoading(List<Show> shows) {
     return _DataLoading(
-      movies,
+      shows,
     );
   }
 
@@ -37,21 +37,21 @@ class _$NowPlayingStateTearOff {
 }
 
 /// @nodoc
-const $NowPlayingState = _$NowPlayingStateTearOff();
+const $ShowsState = _$ShowsStateTearOff();
 
 /// @nodoc
-mixin _$NowPlayingState {
+mixin _$ShowsState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(List<ShowResponse> shows, bool hasMore) data,
-    required TResult Function(List<ShowResponse> movies) dataLoading,
+    required TResult Function(List<Show> shows, bool hasMore) data,
+    required TResult Function(List<Show> shows) dataLoading,
     required TResult Function(String error) error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(List<ShowResponse> shows, bool hasMore)? data,
-    TResult Function(List<ShowResponse> movies)? dataLoading,
+    TResult Function(List<Show> shows, bool hasMore)? data,
+    TResult Function(List<Show> shows)? dataLoading,
     TResult Function(String error)? error,
     required TResult orElse(),
   }) =>
@@ -74,31 +74,30 @@ mixin _$NowPlayingState {
 }
 
 /// @nodoc
-abstract class $NowPlayingStateCopyWith<$Res> {
-  factory $NowPlayingStateCopyWith(
-          NowPlayingState value, $Res Function(NowPlayingState) then) =
-      _$NowPlayingStateCopyWithImpl<$Res>;
+abstract class $ShowsStateCopyWith<$Res> {
+  factory $ShowsStateCopyWith(
+          ShowsState value, $Res Function(ShowsState) then) =
+      _$ShowsStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$NowPlayingStateCopyWithImpl<$Res>
-    implements $NowPlayingStateCopyWith<$Res> {
-  _$NowPlayingStateCopyWithImpl(this._value, this._then);
+class _$ShowsStateCopyWithImpl<$Res> implements $ShowsStateCopyWith<$Res> {
+  _$ShowsStateCopyWithImpl(this._value, this._then);
 
-  final NowPlayingState _value;
+  final ShowsState _value;
   // ignore: unused_field
-  final $Res Function(NowPlayingState) _then;
+  final $Res Function(ShowsState) _then;
 }
 
 /// @nodoc
 abstract class _$DataCopyWith<$Res> {
   factory _$DataCopyWith(_Data value, $Res Function(_Data) then) =
       __$DataCopyWithImpl<$Res>;
-  $Res call({List<ShowResponse> shows, bool hasMore});
+  $Res call({List<Show> shows, bool hasMore});
 }
 
 /// @nodoc
-class __$DataCopyWithImpl<$Res> extends _$NowPlayingStateCopyWithImpl<$Res>
+class __$DataCopyWithImpl<$Res> extends _$ShowsStateCopyWithImpl<$Res>
     implements _$DataCopyWith<$Res> {
   __$DataCopyWithImpl(_Data _value, $Res Function(_Data) _then)
       : super(_value, (v) => _then(v as _Data));
@@ -115,7 +114,7 @@ class __$DataCopyWithImpl<$Res> extends _$NowPlayingStateCopyWithImpl<$Res>
       shows == freezed
           ? _value.shows
           : shows // ignore: cast_nullable_to_non_nullable
-              as List<ShowResponse>,
+              as List<Show>,
       hasMore == freezed
           ? _value.hasMore
           : hasMore // ignore: cast_nullable_to_non_nullable
@@ -129,13 +128,13 @@ class _$_Data implements _Data {
   const _$_Data(this.shows, this.hasMore);
 
   @override
-  final List<ShowResponse> shows;
+  final List<Show> shows;
   @override
   final bool hasMore;
 
   @override
   String toString() {
-    return 'NowPlayingState.data(shows: $shows, hasMore: $hasMore)';
+    return 'ShowsState.data(shows: $shows, hasMore: $hasMore)';
   }
 
   @override
@@ -162,8 +161,8 @@ class _$_Data implements _Data {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(List<ShowResponse> shows, bool hasMore) data,
-    required TResult Function(List<ShowResponse> movies) dataLoading,
+    required TResult Function(List<Show> shows, bool hasMore) data,
+    required TResult Function(List<Show> shows) dataLoading,
     required TResult Function(String error) error,
   }) {
     return data(shows, hasMore);
@@ -172,8 +171,8 @@ class _$_Data implements _Data {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(List<ShowResponse> shows, bool hasMore)? data,
-    TResult Function(List<ShowResponse> movies)? dataLoading,
+    TResult Function(List<Show> shows, bool hasMore)? data,
+    TResult Function(List<Show> shows)? dataLoading,
     TResult Function(String error)? error,
     required TResult orElse(),
   }) {
@@ -208,10 +207,10 @@ class _$_Data implements _Data {
   }
 }
 
-abstract class _Data implements NowPlayingState {
-  const factory _Data(List<ShowResponse> shows, bool hasMore) = _$_Data;
+abstract class _Data implements ShowsState {
+  const factory _Data(List<Show> shows, bool hasMore) = _$_Data;
 
-  List<ShowResponse> get shows => throw _privateConstructorUsedError;
+  List<Show> get shows => throw _privateConstructorUsedError;
   bool get hasMore => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$DataCopyWith<_Data> get copyWith => throw _privateConstructorUsedError;
@@ -222,12 +221,11 @@ abstract class _$DataLoadingCopyWith<$Res> {
   factory _$DataLoadingCopyWith(
           _DataLoading value, $Res Function(_DataLoading) then) =
       __$DataLoadingCopyWithImpl<$Res>;
-  $Res call({List<ShowResponse> movies});
+  $Res call({List<Show> shows});
 }
 
 /// @nodoc
-class __$DataLoadingCopyWithImpl<$Res>
-    extends _$NowPlayingStateCopyWithImpl<$Res>
+class __$DataLoadingCopyWithImpl<$Res> extends _$ShowsStateCopyWithImpl<$Res>
     implements _$DataLoadingCopyWith<$Res> {
   __$DataLoadingCopyWithImpl(
       _DataLoading _value, $Res Function(_DataLoading) _then)
@@ -238,40 +236,40 @@ class __$DataLoadingCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? movies = freezed,
+    Object? shows = freezed,
   }) {
     return _then(_DataLoading(
-      movies == freezed
-          ? _value.movies
-          : movies // ignore: cast_nullable_to_non_nullable
-              as List<ShowResponse>,
+      shows == freezed
+          ? _value.shows
+          : shows // ignore: cast_nullable_to_non_nullable
+              as List<Show>,
     ));
   }
 }
 
 /// @nodoc
 class _$_DataLoading implements _DataLoading {
-  const _$_DataLoading(this.movies);
+  const _$_DataLoading(this.shows);
 
   @override
-  final List<ShowResponse> movies;
+  final List<Show> shows;
 
   @override
   String toString() {
-    return 'NowPlayingState.dataLoading(movies: $movies)';
+    return 'ShowsState.dataLoading(shows: $shows)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _DataLoading &&
-            (identical(other.movies, movies) ||
-                const DeepCollectionEquality().equals(other.movies, movies)));
+            (identical(other.shows, shows) ||
+                const DeepCollectionEquality().equals(other.shows, shows)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(movies);
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(shows);
 
   @JsonKey(ignore: true)
   @override
@@ -281,23 +279,23 @@ class _$_DataLoading implements _DataLoading {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(List<ShowResponse> shows, bool hasMore) data,
-    required TResult Function(List<ShowResponse> movies) dataLoading,
+    required TResult Function(List<Show> shows, bool hasMore) data,
+    required TResult Function(List<Show> shows) dataLoading,
     required TResult Function(String error) error,
   }) {
-    return dataLoading(movies);
+    return dataLoading(shows);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(List<ShowResponse> shows, bool hasMore)? data,
-    TResult Function(List<ShowResponse> movies)? dataLoading,
+    TResult Function(List<Show> shows, bool hasMore)? data,
+    TResult Function(List<Show> shows)? dataLoading,
     TResult Function(String error)? error,
     required TResult orElse(),
   }) {
     if (dataLoading != null) {
-      return dataLoading(movies);
+      return dataLoading(shows);
     }
     return orElse();
   }
@@ -327,10 +325,10 @@ class _$_DataLoading implements _DataLoading {
   }
 }
 
-abstract class _DataLoading implements NowPlayingState {
-  const factory _DataLoading(List<ShowResponse> movies) = _$_DataLoading;
+abstract class _DataLoading implements ShowsState {
+  const factory _DataLoading(List<Show> shows) = _$_DataLoading;
 
-  List<ShowResponse> get movies => throw _privateConstructorUsedError;
+  List<Show> get shows => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$DataLoadingCopyWith<_DataLoading> get copyWith =>
       throw _privateConstructorUsedError;
@@ -344,7 +342,7 @@ abstract class _$ErrorCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$ErrorCopyWithImpl<$Res> extends _$NowPlayingStateCopyWithImpl<$Res>
+class __$ErrorCopyWithImpl<$Res> extends _$ShowsStateCopyWithImpl<$Res>
     implements _$ErrorCopyWith<$Res> {
   __$ErrorCopyWithImpl(_Error _value, $Res Function(_Error) _then)
       : super(_value, (v) => _then(v as _Error));
@@ -374,7 +372,7 @@ class _$_Error implements _Error {
 
   @override
   String toString() {
-    return 'NowPlayingState.error(error: $error)';
+    return 'ShowsState.error(error: $error)';
   }
 
   @override
@@ -397,8 +395,8 @@ class _$_Error implements _Error {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(List<ShowResponse> shows, bool hasMore) data,
-    required TResult Function(List<ShowResponse> movies) dataLoading,
+    required TResult Function(List<Show> shows, bool hasMore) data,
+    required TResult Function(List<Show> shows) dataLoading,
     required TResult Function(String error) error,
   }) {
     return error(this.error);
@@ -407,8 +405,8 @@ class _$_Error implements _Error {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(List<ShowResponse> shows, bool hasMore)? data,
-    TResult Function(List<ShowResponse> movies)? dataLoading,
+    TResult Function(List<Show> shows, bool hasMore)? data,
+    TResult Function(List<Show> shows)? dataLoading,
     TResult Function(String error)? error,
     required TResult orElse(),
   }) {
@@ -443,7 +441,7 @@ class _$_Error implements _Error {
   }
 }
 
-abstract class _Error implements NowPlayingState {
+abstract class _Error implements ShowsState {
   const factory _Error(String error) = _$_Error;
 
   String get error => throw _privateConstructorUsedError;

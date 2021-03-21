@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:movies_mobile_app/models/state/app_startup_state.dart';
+import 'package:movies_mobile_app/models/state/startup_state.dart';
 
-class MainModel extends StateNotifier<AppStartupState> {
-  MainModel() : super(const AppStartupState.initializing()) {
+class MainModel extends StateNotifier<StartupState> {
+  MainModel() : super(const StartupState.initializing()) {
     init();
   }
 
@@ -18,11 +18,11 @@ class MainModel extends StateNotifier<AppStartupState> {
 
   void init() {
     // ignore: dead_code
-    if (false) {
-      state = const AppStartupState.loaded();
+    if (true) {
+      state = const StartupState.loaded();
       // ignore: dead_code
     } else {
-      state = const AppStartupState.needsProfile();
+      state = const StartupState.needsProfile();
     }
   }
 }

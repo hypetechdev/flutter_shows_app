@@ -20,9 +20,9 @@ ShowsResponse _$ShowsResponseFromJson(Map<String, dynamic> json) {
 class _$ShowsResponseTearOff {
   const _$ShowsResponseTearOff();
 
-  _ShowsResponse call({required List<ShowResponse> showsList}) {
+  _ShowsResponse call({required List<ScheduleResponse> scheduleList}) {
     return _ShowsResponse(
-      showsList: showsList,
+      scheduleList: scheduleList,
     );
   }
 
@@ -36,7 +36,7 @@ const $ShowsResponse = _$ShowsResponseTearOff();
 
 /// @nodoc
 mixin _$ShowsResponse {
-  List<ShowResponse> get showsList => throw _privateConstructorUsedError;
+  List<ScheduleResponse> get scheduleList => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -49,7 +49,7 @@ abstract class $ShowsResponseCopyWith<$Res> {
   factory $ShowsResponseCopyWith(
           ShowsResponse value, $Res Function(ShowsResponse) then) =
       _$ShowsResponseCopyWithImpl<$Res>;
-  $Res call({List<ShowResponse> showsList});
+  $Res call({List<ScheduleResponse> scheduleList});
 }
 
 /// @nodoc
@@ -63,13 +63,13 @@ class _$ShowsResponseCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? showsList = freezed,
+    Object? scheduleList = freezed,
   }) {
     return _then(_value.copyWith(
-      showsList: showsList == freezed
-          ? _value.showsList
-          : showsList // ignore: cast_nullable_to_non_nullable
-              as List<ShowResponse>,
+      scheduleList: scheduleList == freezed
+          ? _value.scheduleList
+          : scheduleList // ignore: cast_nullable_to_non_nullable
+              as List<ScheduleResponse>,
     ));
   }
 }
@@ -81,7 +81,7 @@ abstract class _$ShowsResponseCopyWith<$Res>
           _ShowsResponse value, $Res Function(_ShowsResponse) then) =
       __$ShowsResponseCopyWithImpl<$Res>;
   @override
-  $Res call({List<ShowResponse> showsList});
+  $Res call({List<ScheduleResponse> scheduleList});
 }
 
 /// @nodoc
@@ -97,13 +97,13 @@ class __$ShowsResponseCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? showsList = freezed,
+    Object? scheduleList = freezed,
   }) {
     return _then(_ShowsResponse(
-      showsList: showsList == freezed
-          ? _value.showsList
-          : showsList // ignore: cast_nullable_to_non_nullable
-              as List<ShowResponse>,
+      scheduleList: scheduleList == freezed
+          ? _value.scheduleList
+          : scheduleList // ignore: cast_nullable_to_non_nullable
+              as List<ScheduleResponse>,
     ));
   }
 }
@@ -112,31 +112,31 @@ class __$ShowsResponseCopyWithImpl<$Res>
 
 /// @nodoc
 class _$_ShowsResponse implements _ShowsResponse {
-  const _$_ShowsResponse({required this.showsList});
+  const _$_ShowsResponse({required this.scheduleList});
 
   factory _$_ShowsResponse.fromJson(Map<String, dynamic> json) =>
       _$_$_ShowsResponseFromJson(json);
 
   @override
-  final List<ShowResponse> showsList;
+  final List<ScheduleResponse> scheduleList;
 
   @override
   String toString() {
-    return 'ShowsResponse(showsList: $showsList)';
+    return 'ShowsResponse(scheduleList: $scheduleList)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _ShowsResponse &&
-            (identical(other.showsList, showsList) ||
+            (identical(other.scheduleList, scheduleList) ||
                 const DeepCollectionEquality()
-                    .equals(other.showsList, showsList)));
+                    .equals(other.scheduleList, scheduleList)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(showsList);
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(scheduleList);
 
   @JsonKey(ignore: true)
   @override
@@ -150,14 +150,14 @@ class _$_ShowsResponse implements _ShowsResponse {
 }
 
 abstract class _ShowsResponse implements ShowsResponse {
-  const factory _ShowsResponse({required List<ShowResponse> showsList}) =
+  const factory _ShowsResponse({required List<ScheduleResponse> scheduleList}) =
       _$_ShowsResponse;
 
   factory _ShowsResponse.fromJson(Map<String, dynamic> json) =
       _$_ShowsResponse.fromJson;
 
   @override
-  List<ShowResponse> get showsList => throw _privateConstructorUsedError;
+  List<ScheduleResponse> get scheduleList => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ShowsResponseCopyWith<_ShowsResponse> get copyWith =>

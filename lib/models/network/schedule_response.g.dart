@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'show_response.dart';
+part of 'schedule_response.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ShowResponse _$_$_ShowResponseFromJson(Map<String, dynamic> json) {
-  return _$_ShowResponse(
+_$_ScheduleResponse _$_$_ScheduleResponseFromJson(Map<String, dynamic> json) {
+  return _$_ScheduleResponse(
     id: json['id'] as int,
     url: json['url'] as String?,
     name: json['name'] as String?,
@@ -21,7 +21,8 @@ _$_ShowResponse _$_$_ShowResponseFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$_$_ShowResponseToJson(_$_ShowResponse instance) =>
+Map<String, dynamic> _$_$_ScheduleResponseToJson(
+        _$_ScheduleResponse instance) =>
     <String, dynamic>{
       'id': instance.id,
       'url': instance.url,

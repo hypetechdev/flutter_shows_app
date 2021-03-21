@@ -1,0 +1,53 @@
+[
+    {
+        "id": 2043526,
+        "url": "https://www.tvmaze.com/episodes/2043526/kass-til-kvelds-3x10-episode-10",
+        "name": "Episode 10",
+        "season": 3,
+        "number": 10,
+        "airdate": "2021-03-20",
+        "airtime": "06:00",
+        "airstamp": "2021-03-20T05:00:00+00:00",
+        "runtime": 40,
+        "summary": null,
+        "_embedded": {
+            "show": {
+                "id": 45954,
+                "name": "Kåss til kvelds",
+                "type": "Talk Show",
+                "language": "Norwegian",
+                "genres": ["Comedy"],
+                "status": "Running",
+                "runtime": 40,
+                "premiered": "2020-02-29",
+                "schedule": {
+                    "time": "06:00",
+                    "days": ["Saturday"]
+                },
+                "rating": {
+                    "average": null
+                },
+                "image": {
+                    "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/258/646559.jpg",
+                    "original": "https://static.tvmaze.com/uploads/images/original_untouched/258/646559.jpg"
+                },
+                "summary": "<p>A talk show led by Else Kåss Furuseth and Markus Neby. We promise you a great time with exciting guests and lots of fun.</p>"
+            }
+        }
+    },
+    {
+        "id": 500,
+        "url": "https://www.tvmaze.com/shows/500/mutant-x",
+        "name": "Mutant X",
+        "language": "English",
+        "genres": ["Action", "Adventure", "Science-Fiction"],
+        "rating": {
+            "average": 7.4
+        },
+        "image": {
+            "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/4/10319.jpg",
+            "original": "https://static.tvmaze.com/uploads/images/original_untouched/4/10319.jpg"
+        },
+        "summary": "<p>Protecting a world that doesn't know they exist. <b>Mutant X</b> is a team of human mutants who possess extraordinary powers as a result of genetic engineering. Like hundreds of other unsuspecting subjects, these people were altered in secret experiments conducted in a covert government project. Realising that events have spun out of control, the organization that created them is now hunting them down in an urgent \"product recall\". Mutant X's mission is to seek out their fellow new mutants, to help them come to terms with their astonishing abilities and protect them from their creators.</p>"
+    }
+]

@@ -1,12 +1,12 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'show_response.g.dart';
-part 'show_response.freezed.dart';
+part 'schedule_response.g.dart';
+part 'schedule_response.freezed.dart';
 
 @freezed
 @immutable
-class ShowResponse with _$ShowResponse {
-  const factory ShowResponse({
+class ScheduleResponse with _$ScheduleResponse {
+  const factory ScheduleResponse({
     required final int id,
     final String? url,
     final String? name,
@@ -15,8 +15,8 @@ class ShowResponse with _$ShowResponse {
     final String? airtime,
     final DateTime? airstamp,
     final String? summary,
-  }) = _ShowResponse;
+  }) = _ScheduleResponse;
 
-  factory ShowResponse.fromJson(Map<String, dynamic> json) =>
-      _$ShowResponseFromJson(json);
+  factory ScheduleResponse.fromJson(Map<String, dynamic> json) =>
+      _$ScheduleResponseFromJson(json);
 }

@@ -8,13 +8,13 @@ part of 'shows_response.dart';
 
 _$_ShowsResponse _$_$_ShowsResponseFromJson(Map<String, dynamic> json) {
   return _$_ShowsResponse(
-    showsList: (json['showsList'] as List<dynamic>)
-        .map((e) => ShowResponse.fromJson(e as Map<String, dynamic>))
+    scheduleList: (json['scheduleList'] as List<dynamic>)
+        .map((e) => ScheduleResponse.fromJson(e as Map<String, dynamic>))
         .toList(),
   );
 }
 
 Map<String, dynamic> _$_$_ShowsResponseToJson(_$_ShowsResponse instance) =>
     <String, dynamic>{
-      'showsList': instance.showsList,
+      'scheduleList': instance.scheduleList,
     };

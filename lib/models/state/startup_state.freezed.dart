@@ -1,7 +1,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
-part of 'app_startup_state.dart';
+part of 'startup_state.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -13,8 +13,8 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-class _$AppStartupStateTearOff {
-  const _$AppStartupStateTearOff();
+class _$StartupStateTearOff {
+  const _$StartupStateTearOff();
 
   _Initializing initializing() {
     return const _Initializing();
@@ -30,10 +30,10 @@ class _$AppStartupStateTearOff {
 }
 
 /// @nodoc
-const $AppStartupState = _$AppStartupStateTearOff();
+const $StartupState = _$StartupStateTearOff();
 
 /// @nodoc
-mixin _$AppStartupState {
+mixin _$StartupState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initializing,
@@ -67,20 +67,19 @@ mixin _$AppStartupState {
 }
 
 /// @nodoc
-abstract class $AppStartupStateCopyWith<$Res> {
-  factory $AppStartupStateCopyWith(
-          AppStartupState value, $Res Function(AppStartupState) then) =
-      _$AppStartupStateCopyWithImpl<$Res>;
+abstract class $StartupStateCopyWith<$Res> {
+  factory $StartupStateCopyWith(
+          StartupState value, $Res Function(StartupState) then) =
+      _$StartupStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$AppStartupStateCopyWithImpl<$Res>
-    implements $AppStartupStateCopyWith<$Res> {
-  _$AppStartupStateCopyWithImpl(this._value, this._then);
+class _$StartupStateCopyWithImpl<$Res> implements $StartupStateCopyWith<$Res> {
+  _$StartupStateCopyWithImpl(this._value, this._then);
 
-  final AppStartupState _value;
+  final StartupState _value;
   // ignore: unused_field
-  final $Res Function(AppStartupState) _then;
+  final $Res Function(StartupState) _then;
 }
 
 /// @nodoc
@@ -91,8 +90,7 @@ abstract class _$InitializingCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$InitializingCopyWithImpl<$Res>
-    extends _$AppStartupStateCopyWithImpl<$Res>
+class __$InitializingCopyWithImpl<$Res> extends _$StartupStateCopyWithImpl<$Res>
     implements _$InitializingCopyWith<$Res> {
   __$InitializingCopyWithImpl(
       _Initializing _value, $Res Function(_Initializing) _then)
@@ -108,7 +106,7 @@ class _$_Initializing implements _Initializing {
 
   @override
   String toString() {
-    return 'AppStartupState.initializing()';
+    return 'StartupState.initializing()';
   }
 
   @override
@@ -168,7 +166,7 @@ class _$_Initializing implements _Initializing {
   }
 }
 
-abstract class _Initializing implements AppStartupState {
+abstract class _Initializing implements StartupState {
   const factory _Initializing() = _$_Initializing;
 }
 
@@ -180,8 +178,7 @@ abstract class _$NeedsProfileCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$NeedsProfileCopyWithImpl<$Res>
-    extends _$AppStartupStateCopyWithImpl<$Res>
+class __$NeedsProfileCopyWithImpl<$Res> extends _$StartupStateCopyWithImpl<$Res>
     implements _$NeedsProfileCopyWith<$Res> {
   __$NeedsProfileCopyWithImpl(
       _NeedsProfile _value, $Res Function(_NeedsProfile) _then)
@@ -197,7 +194,7 @@ class _$_NeedsProfile implements _NeedsProfile {
 
   @override
   String toString() {
-    return 'AppStartupState.needsProfile()';
+    return 'StartupState.needsProfile()';
   }
 
   @override
@@ -257,7 +254,7 @@ class _$_NeedsProfile implements _NeedsProfile {
   }
 }
 
-abstract class _NeedsProfile implements AppStartupState {
+abstract class _NeedsProfile implements StartupState {
   const factory _NeedsProfile() = _$_NeedsProfile;
 }
 
@@ -268,7 +265,7 @@ abstract class _$LoadedCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$LoadedCopyWithImpl<$Res> extends _$AppStartupStateCopyWithImpl<$Res>
+class __$LoadedCopyWithImpl<$Res> extends _$StartupStateCopyWithImpl<$Res>
     implements _$LoadedCopyWith<$Res> {
   __$LoadedCopyWithImpl(_Loaded _value, $Res Function(_Loaded) _then)
       : super(_value, (v) => _then(v as _Loaded));
@@ -283,7 +280,7 @@ class _$_Loaded implements _Loaded {
 
   @override
   String toString() {
-    return 'AppStartupState.loaded()';
+    return 'StartupState.loaded()';
   }
 
   @override
@@ -343,6 +340,6 @@ class _$_Loaded implements _Loaded {
   }
 }
 
-abstract class _Loaded implements AppStartupState {
+abstract class _Loaded implements StartupState {
   const factory _Loaded() = _$_Loaded;
 }
