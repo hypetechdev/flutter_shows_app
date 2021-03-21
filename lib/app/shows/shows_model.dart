@@ -3,17 +3,28 @@ import 'package:movies_mobile_app/api/api_client.dart';
 import 'package:movies_mobile_app/models/entities/show.dart';
 import 'package:movies_mobile_app/models/state/shows_state.dart';
 
+enum ScreenType { nowPlaying, allShows }
+
 class ShowsModel extends StateNotifier<ShowsState> {
-  ShowsModel({required this.api}) : super(const ShowsState.data([], false)) {
+  ShowsModel({required this.api, this.screenType = ScreenType.allShows})
+      : super(const ShowsState.data([], false)) {
     init();
   }
 
   final APIClient api;
+  final ScreenType screenType;
   final List<Show> _shows = [];
+  final List<Show> _nowPlayingShows = [];
   // int _page = 0;
 
   void init() {
-    fetchShows();
+    switch (screenType) {
+      case ScreenType.nowPlaying:
+        fetchNowPlaying();
+        break;
+      default:
+        fetchShows();
+    }
   }
 
   // bool get _canLoadNextPage => state.maybeWhen(
@@ -37,19 +48,19 @@ class ShowsModel extends StateNotifier<ShowsState> {
     }
   }
 
-  // Future<void> fetchSchedule() async {
-  //   try {
-  //     state = ShowsState.dataLoading(_shows);
-  //     final ShowsResponse result = await api.fetchNowPlaying();
+  Future<void> fetchNowPlaying() async {
+    try {
+      state = ShowsState.dataLoading(_nowPlayingShows);
+      final List<Show> nowPlayingShows = await api.fetchNowPlaying();
 
-  //     if (result.isEmpty) {
-  //       state = ShowsState.data(_shows, false);
-  //     } else {
-  //       // print(result?.scheduleList?.first?.embed?.show.name);
-  //       state = ShowsState.data(_shows..addAll(result.scheduleList), false);
-  //     }
-  //   } catch (e) {
-  //     state = ShowsState.error(e.toString());
-  //   }
-  // }
+      if (nowPlayingShows.isEmpty) {
+        state = ShowsState.data(_nowPlayingShows, false);
+      } else {
+        state =
+            ShowsState.data(_nowPlayingShows..addAll(nowPlayingShows), false);
+      }
+    } catch (e) {
+      state = ShowsState.error(e.toString());
+    }
+  }
 }
