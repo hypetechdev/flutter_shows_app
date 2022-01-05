@@ -6,6 +6,7 @@ import 'package:hyt_app/widgets/show_card.dart';
 
 @Deprecated('Wiget is only for demonstration purpose')
 class ShowList extends StatelessWidget {
+  @Deprecated('Wiget is only for demonstration purpose')
   const ShowList(this.shows);
 
   final List<Show> shows;

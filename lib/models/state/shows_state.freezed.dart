@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'shows_state.dart';
@@ -156,18 +157,17 @@ class _$_Data implements _Data {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Data &&
-            (identical(other.shows, shows) ||
-                const DeepCollectionEquality().equals(other.shows, shows)) &&
-            (identical(other.hasMore, hasMore) ||
-                const DeepCollectionEquality().equals(other.hasMore, hasMore)));
+        (other.runtimeType == runtimeType &&
+            other is _Data &&
+            const DeepCollectionEquality().equals(other.shows, shows) &&
+            const DeepCollectionEquality().equals(other.hasMore, hasMore));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(shows) ^
-      const DeepCollectionEquality().hash(hasMore);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(shows),
+      const DeepCollectionEquality().hash(hasMore));
 
   @JsonKey(ignore: true)
   @override
@@ -246,8 +246,8 @@ class _$_Data implements _Data {
 abstract class _Data implements ShowsState {
   const factory _Data(List<Show> shows, bool hasMore) = _$_Data;
 
-  List<Show> get shows => throw _privateConstructorUsedError;
-  bool get hasMore => throw _privateConstructorUsedError;
+  List<Show> get shows;
+  bool get hasMore;
   @JsonKey(ignore: true)
   _$DataCopyWith<_Data> get copyWith => throw _privateConstructorUsedError;
 }
@@ -299,14 +299,14 @@ class _$_DataLoading implements _DataLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _DataLoading &&
-            (identical(other.shows, shows) ||
-                const DeepCollectionEquality().equals(other.shows, shows)));
+        (other.runtimeType == runtimeType &&
+            other is _DataLoading &&
+            const DeepCollectionEquality().equals(other.shows, shows));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(shows);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(shows));
 
   @JsonKey(ignore: true)
   @override
@@ -385,7 +385,7 @@ class _$_DataLoading implements _DataLoading {
 abstract class _DataLoading implements ShowsState {
   const factory _DataLoading(List<Show> shows) = _$_DataLoading;
 
-  List<Show> get shows => throw _privateConstructorUsedError;
+  List<Show> get shows;
   @JsonKey(ignore: true)
   _$DataLoadingCopyWith<_DataLoading> get copyWith =>
       throw _privateConstructorUsedError;
@@ -436,14 +436,14 @@ class _$_Error implements _Error {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Error &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _Error &&
+            const DeepCollectionEquality().equals(other.error, error));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
@@ -522,7 +522,7 @@ class _$_Error implements _Error {
 abstract class _Error implements ShowsState {
   const factory _Error(String error) = _$_Error;
 
-  String get error => throw _privateConstructorUsedError;
+  String get error;
   @JsonKey(ignore: true)
   _$ErrorCopyWith<_Error> get copyWith => throw _privateConstructorUsedError;
 }

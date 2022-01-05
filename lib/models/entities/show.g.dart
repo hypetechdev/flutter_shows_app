@@ -15,7 +15,7 @@ _$_Show _$$_ShowFromJson(Map<String, dynamic> json) => _$_Show(
       genres: (json['genres'] as List<dynamic>?)
               ?.map((e) => e as String)
               .toList() ??
-          [],
+          const [],
       rating: json['rating'] == null
           ? null
           : Rating.fromJson(json['rating'] as Map<String, dynamic>),

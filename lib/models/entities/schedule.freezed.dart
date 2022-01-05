@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'schedule.dart';
@@ -46,7 +47,7 @@ class _$ScheduleTearOff {
     );
   }
 
-  Schedule fromJson(Map<String, Object> json) {
+  Schedule fromJson(Map<String, Object?> json) {
     return Schedule.fromJson(json);
   }
 }
@@ -278,28 +279,28 @@ class _$_Schedule implements _Schedule {
 
   @override
   final int id;
-  @JsonKey(defaultValue: 'n/a')
+  @JsonKey()
   @override
   final String url;
-  @JsonKey(defaultValue: 'n/a')
+  @JsonKey()
   @override
   final String name;
-  @JsonKey(defaultValue: 'n/a')
+  @JsonKey()
   @override
   final String airdate;
-  @JsonKey(defaultValue: 'n/a')
+  @JsonKey()
   @override
   final String airtime;
-  @JsonKey(defaultValue: 'n/a')
+  @JsonKey()
   @override
   final String airstamp;
-  @JsonKey(defaultValue: 'n/a')
+  @JsonKey()
   @override
   final String summary;
-  @JsonKey(defaultValue: -1)
+  @JsonKey()
   @override
   final int season;
-  @JsonKey(defaultValue: -1)
+  @JsonKey()
   @override
   final int runtime;
   @override
@@ -314,48 +315,33 @@ class _$_Schedule implements _Schedule {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Schedule &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.url, url) ||
-                const DeepCollectionEquality().equals(other.url, url)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.airdate, airdate) ||
-                const DeepCollectionEquality()
-                    .equals(other.airdate, airdate)) &&
-            (identical(other.airtime, airtime) ||
-                const DeepCollectionEquality()
-                    .equals(other.airtime, airtime)) &&
-            (identical(other.airstamp, airstamp) ||
-                const DeepCollectionEquality()
-                    .equals(other.airstamp, airstamp)) &&
-            (identical(other.summary, summary) ||
-                const DeepCollectionEquality()
-                    .equals(other.summary, summary)) &&
-            (identical(other.season, season) ||
-                const DeepCollectionEquality().equals(other.season, season)) &&
-            (identical(other.runtime, runtime) ||
-                const DeepCollectionEquality()
-                    .equals(other.runtime, runtime)) &&
-            (identical(other.embedded, embedded) ||
-                const DeepCollectionEquality()
-                    .equals(other.embedded, embedded)));
+        (other.runtimeType == runtimeType &&
+            other is _Schedule &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.url, url) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.airdate, airdate) &&
+            const DeepCollectionEquality().equals(other.airtime, airtime) &&
+            const DeepCollectionEquality().equals(other.airstamp, airstamp) &&
+            const DeepCollectionEquality().equals(other.summary, summary) &&
+            const DeepCollectionEquality().equals(other.season, season) &&
+            const DeepCollectionEquality().equals(other.runtime, runtime) &&
+            const DeepCollectionEquality().equals(other.embedded, embedded));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(url) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(airdate) ^
-      const DeepCollectionEquality().hash(airtime) ^
-      const DeepCollectionEquality().hash(airstamp) ^
-      const DeepCollectionEquality().hash(summary) ^
-      const DeepCollectionEquality().hash(season) ^
-      const DeepCollectionEquality().hash(runtime) ^
-      const DeepCollectionEquality().hash(embedded);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(url),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(airdate),
+      const DeepCollectionEquality().hash(airtime),
+      const DeepCollectionEquality().hash(airstamp),
+      const DeepCollectionEquality().hash(summary),
+      const DeepCollectionEquality().hash(season),
+      const DeepCollectionEquality().hash(runtime),
+      const DeepCollectionEquality().hash(embedded));
 
   @JsonKey(ignore: true)
   @override
@@ -384,26 +370,26 @@ abstract class _Schedule implements Schedule {
   factory _Schedule.fromJson(Map<String, dynamic> json) = _$_Schedule.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get url => throw _privateConstructorUsedError;
+  String get url;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  String get airdate => throw _privateConstructorUsedError;
+  String get airdate;
   @override
-  String get airtime => throw _privateConstructorUsedError;
+  String get airtime;
   @override
-  String get airstamp => throw _privateConstructorUsedError;
+  String get airstamp;
   @override
-  String get summary => throw _privateConstructorUsedError;
+  String get summary;
   @override
-  int get season => throw _privateConstructorUsedError;
+  int get season;
   @override
-  int get runtime => throw _privateConstructorUsedError;
+  int get runtime;
   @override
   @JsonKey(name: '_embedded')
-  Embedded? get embedded => throw _privateConstructorUsedError;
+  Embedded? get embedded;
   @override
   @JsonKey(ignore: true)
   _$ScheduleCopyWith<_Schedule> get copyWith =>
@@ -424,7 +410,7 @@ class _$EmbeddedTearOff {
     );
   }
 
-  Embedded fromJson(Map<String, Object> json) {
+  Embedded fromJson(Map<String, Object?> json) {
     return Embedded.fromJson(json);
   }
 }
@@ -535,14 +521,14 @@ class _$_Embedded implements _Embedded {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Embedded &&
-            (identical(other.show, show) ||
-                const DeepCollectionEquality().equals(other.show, show)));
+        (other.runtimeType == runtimeType &&
+            other is _Embedded &&
+            const DeepCollectionEquality().equals(other.show, show));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(show);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(show));
 
   @JsonKey(ignore: true)
   @override
@@ -561,7 +547,7 @@ abstract class _Embedded implements Embedded {
   factory _Embedded.fromJson(Map<String, dynamic> json) = _$_Embedded.fromJson;
 
   @override
-  Show? get show => throw _privateConstructorUsedError;
+  Show? get show;
   @override
   @JsonKey(ignore: true)
   _$EmbeddedCopyWith<_Embedded> get copyWith =>
@@ -583,7 +569,7 @@ class _$ImageTearOff {
     );
   }
 
-  Image fromJson(Map<String, Object> json) {
+  Image fromJson(Map<String, Object?> json) {
     return Image.fromJson(json);
   }
 }
@@ -690,19 +676,17 @@ class _$_Image implements _Image {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Image &&
-            (identical(other.medium, medium) ||
-                const DeepCollectionEquality().equals(other.medium, medium)) &&
-            (identical(other.original, original) ||
-                const DeepCollectionEquality()
-                    .equals(other.original, original)));
+        (other.runtimeType == runtimeType &&
+            other is _Image &&
+            const DeepCollectionEquality().equals(other.medium, medium) &&
+            const DeepCollectionEquality().equals(other.original, original));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(medium) ^
-      const DeepCollectionEquality().hash(original);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(medium),
+      const DeepCollectionEquality().hash(original));
 
   @JsonKey(ignore: true)
   @override
@@ -721,9 +705,9 @@ abstract class _Image implements Image {
   factory _Image.fromJson(Map<String, dynamic> json) = _$_Image.fromJson;
 
   @override
-  String? get medium => throw _privateConstructorUsedError;
+  String? get medium;
   @override
-  String? get original => throw _privateConstructorUsedError;
+  String? get original;
   @override
   @JsonKey(ignore: true)
   _$ImageCopyWith<_Image> get copyWith => throw _privateConstructorUsedError;
@@ -743,7 +727,7 @@ class _$RatingTearOff {
     );
   }
 
-  Rating fromJson(Map<String, Object> json) {
+  Rating fromJson(Map<String, Object?> json) {
     return Rating.fromJson(json);
   }
 }
@@ -826,7 +810,7 @@ class _$_Rating implements _Rating {
   factory _$_Rating.fromJson(Map<String, dynamic> json) =>
       _$$_RatingFromJson(json);
 
-  @JsonKey(defaultValue: 'n/a')
+  @JsonKey()
   @override
   final dynamic average;
 
@@ -838,14 +822,14 @@ class _$_Rating implements _Rating {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Rating &&
-            (identical(other.average, average) ||
-                const DeepCollectionEquality().equals(other.average, average)));
+        (other.runtimeType == runtimeType &&
+            other is _Rating &&
+            const DeepCollectionEquality().equals(other.average, average));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(average);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(average));
 
   @JsonKey(ignore: true)
   @override
@@ -864,7 +848,7 @@ abstract class _Rating implements Rating {
   factory _Rating.fromJson(Map<String, dynamic> json) = _$_Rating.fromJson;
 
   @override
-  dynamic get average => throw _privateConstructorUsedError;
+  dynamic get average;
   @override
   @JsonKey(ignore: true)
   _$RatingCopyWith<_Rating> get copyWith => throw _privateConstructorUsedError;

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'show.dart';
@@ -42,7 +43,7 @@ class _$ShowTearOff {
     );
   }
 
-  Show fromJson(Map<String, Object> json) {
+  Show fromJson(Map<String, Object?> json) {
     return Show.fromJson(json);
   }
 }
@@ -257,19 +258,19 @@ class _$_Show implements _Show {
 
   @override
   final int id;
-  @JsonKey(defaultValue: 'n/a')
+  @JsonKey()
   @override
   final String url;
-  @JsonKey(defaultValue: 'n/a')
+  @JsonKey()
   @override
   final String name;
-  @JsonKey(defaultValue: 'n/a')
+  @JsonKey()
   @override
   final String language;
-  @JsonKey(defaultValue: 'n/a')
+  @JsonKey()
   @override
   final String summary;
-  @JsonKey(defaultValue: const [])
+  @JsonKey()
   @override
   final List<String> genres;
   @override
@@ -285,38 +286,29 @@ class _$_Show implements _Show {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Show &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.url, url) ||
-                const DeepCollectionEquality().equals(other.url, url)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.language, language) ||
-                const DeepCollectionEquality()
-                    .equals(other.language, language)) &&
-            (identical(other.summary, summary) ||
-                const DeepCollectionEquality()
-                    .equals(other.summary, summary)) &&
-            (identical(other.genres, genres) ||
-                const DeepCollectionEquality().equals(other.genres, genres)) &&
-            (identical(other.rating, rating) ||
-                const DeepCollectionEquality().equals(other.rating, rating)) &&
-            (identical(other.image, image) ||
-                const DeepCollectionEquality().equals(other.image, image)));
+        (other.runtimeType == runtimeType &&
+            other is _Show &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.url, url) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.language, language) &&
+            const DeepCollectionEquality().equals(other.summary, summary) &&
+            const DeepCollectionEquality().equals(other.genres, genres) &&
+            const DeepCollectionEquality().equals(other.rating, rating) &&
+            const DeepCollectionEquality().equals(other.image, image));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(url) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(language) ^
-      const DeepCollectionEquality().hash(summary) ^
-      const DeepCollectionEquality().hash(genres) ^
-      const DeepCollectionEquality().hash(rating) ^
-      const DeepCollectionEquality().hash(image);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(url),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(language),
+      const DeepCollectionEquality().hash(summary),
+      const DeepCollectionEquality().hash(genres),
+      const DeepCollectionEquality().hash(rating),
+      const DeepCollectionEquality().hash(image));
 
   @JsonKey(ignore: true)
   @override
@@ -343,21 +335,21 @@ abstract class _Show implements Show {
   factory _Show.fromJson(Map<String, dynamic> json) = _$_Show.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get url => throw _privateConstructorUsedError;
+  String get url;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  String get language => throw _privateConstructorUsedError;
+  String get language;
   @override
-  String get summary => throw _privateConstructorUsedError;
+  String get summary;
   @override
-  List<String> get genres => throw _privateConstructorUsedError;
+  List<String> get genres;
   @override
-  Rating? get rating => throw _privateConstructorUsedError;
+  Rating? get rating;
   @override
-  Image? get image => throw _privateConstructorUsedError;
+  Image? get image;
   @override
   @JsonKey(ignore: true)
   _$ShowCopyWith<_Show> get copyWith => throw _privateConstructorUsedError;
@@ -378,7 +370,7 @@ class _$ImageTearOff {
     );
   }
 
-  Image fromJson(Map<String, Object> json) {
+  Image fromJson(Map<String, Object?> json) {
     return Image.fromJson(json);
   }
 }
@@ -485,19 +477,17 @@ class _$_Image implements _Image {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Image &&
-            (identical(other.medium, medium) ||
-                const DeepCollectionEquality().equals(other.medium, medium)) &&
-            (identical(other.original, original) ||
-                const DeepCollectionEquality()
-                    .equals(other.original, original)));
+        (other.runtimeType == runtimeType &&
+            other is _Image &&
+            const DeepCollectionEquality().equals(other.medium, medium) &&
+            const DeepCollectionEquality().equals(other.original, original));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(medium) ^
-      const DeepCollectionEquality().hash(original);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(medium),
+      const DeepCollectionEquality().hash(original));
 
   @JsonKey(ignore: true)
   @override
@@ -516,9 +506,9 @@ abstract class _Image implements Image {
   factory _Image.fromJson(Map<String, dynamic> json) = _$_Image.fromJson;
 
   @override
-  String? get medium => throw _privateConstructorUsedError;
+  String? get medium;
   @override
-  String? get original => throw _privateConstructorUsedError;
+  String? get original;
   @override
   @JsonKey(ignore: true)
   _$ImageCopyWith<_Image> get copyWith => throw _privateConstructorUsedError;
@@ -538,7 +528,7 @@ class _$RatingTearOff {
     );
   }
 
-  Rating fromJson(Map<String, Object> json) {
+  Rating fromJson(Map<String, Object?> json) {
     return Rating.fromJson(json);
   }
 }
@@ -621,7 +611,7 @@ class _$_Rating implements _Rating {
   factory _$_Rating.fromJson(Map<String, dynamic> json) =>
       _$$_RatingFromJson(json);
 
-  @JsonKey(defaultValue: -1)
+  @JsonKey()
   @override
   final double average;
 
@@ -633,14 +623,14 @@ class _$_Rating implements _Rating {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Rating &&
-            (identical(other.average, average) ||
-                const DeepCollectionEquality().equals(other.average, average)));
+        (other.runtimeType == runtimeType &&
+            other is _Rating &&
+            const DeepCollectionEquality().equals(other.average, average));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(average);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(average));
 
   @JsonKey(ignore: true)
   @override
@@ -659,7 +649,7 @@ abstract class _Rating implements Rating {
   factory _Rating.fromJson(Map<String, dynamic> json) = _$_Rating.fromJson;
 
   @override
-  double get average => throw _privateConstructorUsedError;
+  double get average;
   @override
   @JsonKey(ignore: true)
   _$RatingCopyWith<_Rating> get copyWith => throw _privateConstructorUsedError;
