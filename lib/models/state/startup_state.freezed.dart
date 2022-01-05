@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'startup_state.dart';
 
@@ -42,6 +43,13 @@ mixin _$StartupState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? initializing,
+    TResult Function()? needsProfile,
+    TResult Function()? loaded,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initializing,
     TResult Function()? needsProfile,
@@ -54,6 +62,13 @@ mixin _$StartupState {
     required TResult Function(_Initializing value) initializing,
     required TResult Function(_NeedsProfile value) needsProfile,
     required TResult Function(_Loaded value) loaded,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Initializing value)? initializing,
+    TResult Function(_NeedsProfile value)? needsProfile,
+    TResult Function(_Loaded value)? loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -101,6 +116,7 @@ class __$InitializingCopyWithImpl<$Res> extends _$StartupStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_Initializing implements _Initializing {
   const _$_Initializing();
 
@@ -129,6 +145,16 @@ class _$_Initializing implements _Initializing {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? initializing,
+    TResult Function()? needsProfile,
+    TResult Function()? loaded,
+  }) {
+    return initializing?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initializing,
     TResult Function()? needsProfile,
@@ -149,6 +175,16 @@ class _$_Initializing implements _Initializing {
     required TResult Function(_Loaded value) loaded,
   }) {
     return initializing(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Initializing value)? initializing,
+    TResult Function(_NeedsProfile value)? needsProfile,
+    TResult Function(_Loaded value)? loaded,
+  }) {
+    return initializing?.call(this);
   }
 
   @override
@@ -189,6 +225,7 @@ class __$NeedsProfileCopyWithImpl<$Res> extends _$StartupStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_NeedsProfile implements _NeedsProfile {
   const _$_NeedsProfile();
 
@@ -217,6 +254,16 @@ class _$_NeedsProfile implements _NeedsProfile {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? initializing,
+    TResult Function()? needsProfile,
+    TResult Function()? loaded,
+  }) {
+    return needsProfile?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initializing,
     TResult Function()? needsProfile,
@@ -237,6 +284,16 @@ class _$_NeedsProfile implements _NeedsProfile {
     required TResult Function(_Loaded value) loaded,
   }) {
     return needsProfile(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Initializing value)? initializing,
+    TResult Function(_NeedsProfile value)? needsProfile,
+    TResult Function(_Loaded value)? loaded,
+  }) {
+    return needsProfile?.call(this);
   }
 
   @override
@@ -275,6 +332,7 @@ class __$LoadedCopyWithImpl<$Res> extends _$StartupStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_Loaded implements _Loaded {
   const _$_Loaded();
 
@@ -303,6 +361,16 @@ class _$_Loaded implements _Loaded {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? initializing,
+    TResult Function()? needsProfile,
+    TResult Function()? loaded,
+  }) {
+    return loaded?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initializing,
     TResult Function()? needsProfile,
@@ -323,6 +391,16 @@ class _$_Loaded implements _Loaded {
     required TResult Function(_Loaded value) loaded,
   }) {
     return loaded(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Initializing value)? initializing,
+    TResult Function(_NeedsProfile value)? needsProfile,
+    TResult Function(_Loaded value)? loaded,
+  }) {
+    return loaded?.call(this);
   }
 
   @override

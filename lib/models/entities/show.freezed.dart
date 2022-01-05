@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'show.dart';
 
@@ -239,9 +240,8 @@ class __$ShowCopyWithImpl<$Res> extends _$ShowCopyWithImpl<$Res>
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Show implements _Show {
   const _$_Show(
       {required this.id,
@@ -253,8 +253,7 @@ class _$_Show implements _Show {
       this.rating,
       this.image});
 
-  factory _$_Show.fromJson(Map<String, dynamic> json) =>
-      _$_$_ShowFromJson(json);
+  factory _$_Show.fromJson(Map<String, dynamic> json) => _$$_ShowFromJson(json);
 
   @override
   final int id;
@@ -326,7 +325,7 @@ class _$_Show implements _Show {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ShowToJson(this);
+    return _$$_ShowToJson(this);
   }
 }
 
@@ -465,14 +464,13 @@ class __$ImageCopyWithImpl<$Res> extends _$ImageCopyWithImpl<$Res>
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Image implements _Image {
   const _$_Image({this.medium, this.original});
 
   factory _$_Image.fromJson(Map<String, dynamic> json) =>
-      _$_$_ImageFromJson(json);
+      _$$_ImageFromJson(json);
 
   @override
   final String? medium;
@@ -508,7 +506,7 @@ class _$_Image implements _Image {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ImageToJson(this);
+    return _$$_ImageToJson(this);
   }
 }
 
@@ -615,14 +613,13 @@ class __$RatingCopyWithImpl<$Res> extends _$RatingCopyWithImpl<$Res>
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Rating implements _Rating {
   const _$_Rating({this.average = -1});
 
   factory _$_Rating.fromJson(Map<String, dynamic> json) =>
-      _$_$_RatingFromJson(json);
+      _$$_RatingFromJson(json);
 
   @JsonKey(defaultValue: -1)
   @override
@@ -652,7 +649,7 @@ class _$_Rating implements _Rating {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_RatingToJson(this);
+    return _$$_RatingToJson(this);
   }
 }
 

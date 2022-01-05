@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'schedule.dart';
 
@@ -257,9 +258,8 @@ class __$ScheduleCopyWithImpl<$Res> extends _$ScheduleCopyWithImpl<$Res>
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Schedule implements _Schedule {
   const _$_Schedule(
       {required this.id,
@@ -274,7 +274,7 @@ class _$_Schedule implements _Schedule {
       @JsonKey(name: '_embedded') this.embedded});
 
   factory _$_Schedule.fromJson(Map<String, dynamic> json) =>
-      _$_$_ScheduleFromJson(json);
+      _$$_ScheduleFromJson(json);
 
   @override
   final int id;
@@ -364,7 +364,7 @@ class _$_Schedule implements _Schedule {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ScheduleToJson(this);
+    return _$$_ScheduleToJson(this);
   }
 }
 
@@ -516,14 +516,13 @@ class __$EmbeddedCopyWithImpl<$Res> extends _$EmbeddedCopyWithImpl<$Res>
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Embedded implements _Embedded {
   const _$_Embedded({this.show});
 
   factory _$_Embedded.fromJson(Map<String, dynamic> json) =>
-      _$_$_EmbeddedFromJson(json);
+      _$$_EmbeddedFromJson(json);
 
   @override
   final Show? show;
@@ -552,7 +551,7 @@ class _$_Embedded implements _Embedded {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_EmbeddedToJson(this);
+    return _$$_EmbeddedToJson(this);
   }
 }
 
@@ -670,14 +669,13 @@ class __$ImageCopyWithImpl<$Res> extends _$ImageCopyWithImpl<$Res>
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Image implements _Image {
   const _$_Image({this.medium, this.original});
 
   factory _$_Image.fromJson(Map<String, dynamic> json) =>
-      _$_$_ImageFromJson(json);
+      _$$_ImageFromJson(json);
 
   @override
   final String? medium;
@@ -713,7 +711,7 @@ class _$_Image implements _Image {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ImageToJson(this);
+    return _$$_ImageToJson(this);
   }
 }
 
@@ -820,14 +818,13 @@ class __$RatingCopyWithImpl<$Res> extends _$RatingCopyWithImpl<$Res>
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Rating implements _Rating {
   const _$_Rating({this.average = 'n/a'});
 
   factory _$_Rating.fromJson(Map<String, dynamic> json) =>
-      _$_$_RatingFromJson(json);
+      _$$_RatingFromJson(json);
 
   @JsonKey(defaultValue: 'n/a')
   @override
@@ -857,7 +854,7 @@ class _$_Rating implements _Rating {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_RatingToJson(this);
+    return _$$_RatingToJson(this);
   }
 }
 

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'shows_state.dart';
 
@@ -49,6 +50,13 @@ mixin _$ShowsState {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(List<Show> shows, bool hasMore)? data,
+    TResult Function(List<Show> shows)? dataLoading,
+    TResult Function(String error)? error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(List<Show> shows, bool hasMore)? data,
     TResult Function(List<Show> shows)? dataLoading,
@@ -61,6 +69,13 @@ mixin _$ShowsState {
     required TResult Function(_Data value) data,
     required TResult Function(_DataLoading value) dataLoading,
     required TResult Function(_Error value) error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Data value)? data,
+    TResult Function(_DataLoading value)? dataLoading,
+    TResult Function(_Error value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -124,6 +139,7 @@ class __$DataCopyWithImpl<$Res> extends _$ShowsStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_Data implements _Data {
   const _$_Data(this.shows, this.hasMore);
 
@@ -170,6 +186,16 @@ class _$_Data implements _Data {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(List<Show> shows, bool hasMore)? data,
+    TResult Function(List<Show> shows)? dataLoading,
+    TResult Function(String error)? error,
+  }) {
+    return data?.call(shows, hasMore);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(List<Show> shows, bool hasMore)? data,
     TResult Function(List<Show> shows)? dataLoading,
@@ -190,6 +216,16 @@ class _$_Data implements _Data {
     required TResult Function(_Error value) error,
   }) {
     return data(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Data value)? data,
+    TResult Function(_DataLoading value)? dataLoading,
+    TResult Function(_Error value)? error,
+  }) {
+    return data?.call(this);
   }
 
   @override
@@ -248,6 +284,7 @@ class __$DataLoadingCopyWithImpl<$Res> extends _$ShowsStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_DataLoading implements _DataLoading {
   const _$_DataLoading(this.shows);
 
@@ -288,6 +325,16 @@ class _$_DataLoading implements _DataLoading {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(List<Show> shows, bool hasMore)? data,
+    TResult Function(List<Show> shows)? dataLoading,
+    TResult Function(String error)? error,
+  }) {
+    return dataLoading?.call(shows);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(List<Show> shows, bool hasMore)? data,
     TResult Function(List<Show> shows)? dataLoading,
@@ -308,6 +355,16 @@ class _$_DataLoading implements _DataLoading {
     required TResult Function(_Error value) error,
   }) {
     return dataLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Data value)? data,
+    TResult Function(_DataLoading value)? dataLoading,
+    TResult Function(_Error value)? error,
+  }) {
+    return dataLoading?.call(this);
   }
 
   @override
@@ -364,6 +421,7 @@ class __$ErrorCopyWithImpl<$Res> extends _$ShowsStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_Error implements _Error {
   const _$_Error(this.error);
 
@@ -404,6 +462,16 @@ class _$_Error implements _Error {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(List<Show> shows, bool hasMore)? data,
+    TResult Function(List<Show> shows)? dataLoading,
+    TResult Function(String error)? error,
+  }) {
+    return error?.call(this.error);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(List<Show> shows, bool hasMore)? data,
     TResult Function(List<Show> shows)? dataLoading,
@@ -424,6 +492,16 @@ class _$_Error implements _Error {
     required TResult Function(_Error value) error,
   }) {
     return error(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Data value)? data,
+    TResult Function(_DataLoading value)? dataLoading,
+    TResult Function(_Error value)? error,
+  }) {
+    return error?.call(this);
   }
 
   @override
