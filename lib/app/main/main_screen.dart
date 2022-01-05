@@ -4,10 +4,10 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:hyt_app/app/main/root_providers.dart';
 import 'package:hyt_app/app/shows/shows_screen.dart';
 
-class MainScreen extends HookWidget {
+class MainScreen extends HookConsumerWidget {
   @override
-  Widget build(BuildContext context) {
-    final state = useProvider(appStartupProvider.state);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final state = ref.watch(appStartupProvider);
     return state.when(
       initializing: () => const Center(child: CircularProgressIndicator()),
       needsProfile: () => const Center(child: CircularProgressIndicator()),

@@ -7,14 +7,14 @@ import 'package:hyt_app/models/state/shows_state.dart';
 import 'package:hyt_app/widgets/scrollable_list_builder.dart';
 import 'package:hyt_app/widgets/shows_grid.dart';
 
-final nowPlayingProvider = StateNotifierProvider<ShowsModel>(
+final nowPlayingProvider = StateNotifierProvider<ShowsModel, ShowsState>(
   (ref) => ShowsModel(api: APIClient(), screenType: ScreenType.nowPlaying),
 );
 
-class NowPlayingScreen extends HookWidget {
+class NowPlayingScreen extends HookConsumerWidget {
   @override
-  Widget build(BuildContext context) {
-    final state = useProvider(nowPlayingProvider.state);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final state = ref.watch(nowPlayingProvider);
     return ScrollableListBuilder(
       title: 'Now Playing',
       builder: _buildNowPlayingList(state),

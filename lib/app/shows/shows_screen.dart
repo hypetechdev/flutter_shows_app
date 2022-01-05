@@ -10,14 +10,14 @@ import 'package:hyt_app/models/state/shows_state.dart';
 import 'package:hyt_app/widgets/scrollable_list_builder.dart';
 import 'package:hyt_app/widgets/shows_grid.dart';
 
-final showsModelProvider = StateNotifierProvider<ShowsModel>(
+final showsModelProvider = StateNotifierProvider<ShowsModel, ShowsState>(
   (ref) => ShowsModel(api: APIClient()),
 );
 
-class ShowsScreen extends HookWidget {
+class ShowsScreen extends HookConsumerWidget {
   @override
-  Widget build(BuildContext context) {
-    final state = useProvider(showsModelProvider.state);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final state = ref.watch(showsModelProvider);
     return ScrollableListBuilder(
       title: 'Search Shows',
       builder: _buildNowPlayingList(state),
